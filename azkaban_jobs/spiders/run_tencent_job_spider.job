@@ -1,0 +1,2 @@
+type=command
+command=sh /root/kete_spider/scripts/run_spider.sh tencentjob
