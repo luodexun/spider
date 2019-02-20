@@ -9,7 +9,7 @@ class CurrencydetailPipeline(object):
             user=MYSQL_USER,
             password=MYSQL_PASSWORD,
             port=MYSQL_PORT,
-            db='test',
+            db='shop',
             charset=MYSQL_CHARSET,
             cursorclass=pymysql.cursors.DictCursor)
         self.conn.ping(True)

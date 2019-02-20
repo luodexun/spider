@@ -9,7 +9,7 @@ class CurrencydetailSpider(scrapy.Spider):
     def __init__(self, *a, **kw):
         super(CurrencydetailSpider, self).__init__(*a, **kw)
         self.conn = pymysql.connect(host=MYSQL_HOST, user=MYSQL_USER, passwd=MYSQL_PASSWORD,
-                                    db='test',
+                                    db='shop',
                                     port=MYSQL_PORT, charset='utf8', cursorclass=pymysql.cursors.DictCursor)
         self.conn.ping(True)
         self.cur = self.conn.cursor()
